@@ -61,8 +61,8 @@ export default function ReclamationsPage() {
             <Table>
               <TableHead>
                 <TableRow>
-                  <TableCell>ID</TableCell>
-                  <TableCell>User ID</TableCell>
+                  {/* <TableCell>ID</TableCell>
+                  <TableCell>User ID</TableCell> */}
                   <TableCell>Sujet</TableCell>
                   <TableCell>Description</TableCell>
                   <TableCell>Statut</TableCell>
@@ -71,10 +71,10 @@ export default function ReclamationsPage() {
               <TableBody>
                 {reclamations.map((item) => (
                   <TableRow key={String(item.id)}>
-                    <TableCell>{String(item.id)}</TableCell>
-                    <TableCell>{String(item.userId ?? '-')}</TableCell>
-                    <TableCell>{String(item.subject ?? '-')}</TableCell>
-                    <TableCell>{String(item.description ?? '-')}</TableCell>
+                    {/* <TableCell>{String(item.id)}</TableCell>
+                    <TableCell>{String(item.userId ?? '-')}</TableCell> */}
+                    <TableCell>{String(item.message ?? '-')}</TableCell>
+                    <TableCell>{String(item.status ?? '-')}</TableCell>
                     <TableCell>
                       <FormControl size="small" fullWidth>
                         <Select
