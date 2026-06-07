@@ -38,7 +38,7 @@ export function Searchbar({ sx, ...other }: BoxProps) {
           </IconButton>
         )}
 
-        <Slide direction="down" in={open} mountOnEnter unmountOnExit>
+        {/* <Slide direction="down" in={open} mountOnEnter unmountOnExit>
           <Box
             sx={{
               top: 0,
@@ -77,7 +77,7 @@ export function Searchbar({ sx, ...other }: BoxProps) {
               Search
             </Button>
           </Box>
-        </Slide>
+        </Slide> */}
       </div>
     </ClickAwayListener>
   );

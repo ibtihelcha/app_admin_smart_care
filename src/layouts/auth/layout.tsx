@@ -49,12 +49,7 @@ export function AuthLayout({
           This is an info Alert.
         </Alert>
       ),
-      leftArea: (
-        <>
-          {/** @slot Logo */}
-          <Logo />
-        </>
-      ),
+      leftArea: null,
       rightArea: (
         <Box sx={{ display: 'flex', alignItems: 'center', gap: { xs: 1, sm: 1.5 } }}>
           {/** @slot Help link */}
@@ -91,6 +86,10 @@ export function AuthLayout({
         (theme) => ({
           alignItems: 'center',
           p: theme.spacing(3, 2, 10, 2),
+          background: `linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(/assets/background/overlay.jpg)`,
+          backgroundSize: 'cover',
+          backgroundRepeat: 'no-repeat',
+          backgroundPosition: 'center',
           [theme.breakpoints.up(layoutQuery)]: {
             justifyContent: 'center',
             p: theme.spacing(10, 0, 10, 0),

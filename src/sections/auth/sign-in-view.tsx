@@ -12,6 +12,7 @@ import { useRouter } from 'src/routes/hooks';
 
 import { useAuth } from 'src/auth';
 
+import { Logo } from 'src/components/logo';
 import { Iconify } from 'src/components/iconify';
 
 // ----------------------------------------------------------------------
@@ -97,10 +98,11 @@ export function SignInView() {
         fullWidth
         size="large"
         type="submit"
-        color="inherit"
+        color="primary"
         variant="contained"
         disabled={loading}
         onClick={handleSignIn}
+        sx={{ mt: 1 }}
       >
         {loading ? 'Connexion...' : 'Sign in'}
       </Button>
@@ -111,19 +113,27 @@ export function SignInView() {
     <>
       <Box
         sx={{
-          gap: 1.5,
+          gap: 2,
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'center',
           mb: 5,
         }}
       >
-        <Typography variant="h5">Sign in</Typography>
-        <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-          Acces reserve aux comptes administrateurs.
+        <Logo sx={{ width: 180, height: 180, mb: 3 }} />
+        
+        <Typography variant="h4" fontWeight="bold">
+          Smart Care Admin
+        </Typography>
+        
+        <Typography variant="body2" sx={{ color: 'text.secondary', textAlign: 'center' }}>
+          Connectez-vous pour gérer votre plateforme .
         </Typography>
       </Box>
-      {renderForm}
+      
+      <Box sx={{ p: 4, borderRadius: 2, bgcolor: 'background.paper', boxShadow: (theme) => theme.customShadows.card }}>
+        {renderForm}
+      </Box>
     </>
   );
 }

@@ -1,8 +1,6 @@
 import type { StackProps } from '@mui/material/Stack';
 
 import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
 
 // ----------------------------------------------------------------------
 
@@ -21,7 +19,7 @@ export function NavUpgrade({ sx, ...other }: StackProps) {
       ]}
       {...other}
     >
-      <Typography
+      {/* <Typography
         variant="h6"
         sx={[
           (theme) => ({
@@ -35,9 +33,9 @@ export function NavUpgrade({ sx, ...other }: StackProps) {
         ]}
       >
         More features?
-      </Typography>
+      </Typography> */}
 
-      <Typography variant="body2" sx={{ color: 'text.secondary', mt: 0.5 }}>
+      {/* <Typography variant="body2" sx={{ color: 'text.secondary', mt: 0.5 }}>
         {`From only `}
         <Box component="strong" sx={{ color: 'text.primary' }}>
           $69
@@ -49,16 +47,16 @@ export function NavUpgrade({ sx, ...other }: StackProps) {
         alt="Minimal dashboard"
         src="/assets/illustrations/illustration-dashboard.webp"
         sx={{ width: 200, my: 2 }}
-      />
+      /> */}
 
-      <Button
+      {/* <Button
         href="https://material-ui.com/store/items/minimal-dashboard/"
         target="_blank"
         variant="contained"
         color="inherit"
       >
         Upgrade to Pro
-      </Button>
+      </Button> */}
     </Box>
   );
 }

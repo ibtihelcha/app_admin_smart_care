@@ -3,13 +3,13 @@ import { getFirestore } from 'firebase/firestore';
 import { getApp, getApps, initializeApp } from 'firebase/app';
 
 const firebaseConfig = {
-  apiKey: 'AIzaSyCpreVZd-PK4C7X48w07oSS-Y5tcCIiZtk',
-  authDomain: 'smartcare-2b4bc.firebaseapp.com',
-  projectId: 'smartcare-2b4bc',
-  storageBucket: 'smartcare-2b4bc.firebasestorage.app',
-  messagingSenderId: '639948862921',
-  appId: '1:639948862921:web:7970c1d243182e7beca418',
-  measurementId: 'G-FXSB7MZ89T',
+  apiKey: "AIzaSyCIb-dwp0wYBw6Py2Zn7h_mut5uEmVzS8c",
+  authDomain: "smartcare-52eee.firebaseapp.com",
+  projectId: "smartcare-52eee",
+  storageBucket: "smartcare-52eee.firebasestorage.app",
+  messagingSenderId: "356266877256",
+  appId: "1:356266877256:web:fbff9d8f88ddb5f48fd37d",
+  measurementId: "G-MRPJK0H4S8"
 };
 
 export const firebaseApp = getApps().length ? getApp() : initializeApp(firebaseConfig);

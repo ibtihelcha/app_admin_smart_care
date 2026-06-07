@@ -112,11 +112,11 @@ export function NavContent({ data, slots, workspaces, sx }: NavContentProps) {
 
   return (
     <>
-      <Logo />
+      <Logo sx={{ mb: 3, alignSelf: 'center' }} />
 
       {slots?.topArea}
 
-      <WorkspacesPopover data={workspaces} sx={{ my: 2 }} />
+      <WorkspacesPopover data={workspaces} sx={{ mb: 2 }} />
 
       <Scrollbar fillContent>
         <Box
